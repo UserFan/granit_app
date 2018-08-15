@@ -1,0 +1,29 @@
+.container-fluid
+  .d-none.d-lg-block
+    #carouselExampleIndicators.carousel.slide data-ride="carousel"
+      ol.carousel-indicators
+        li.active data-slide-to="0" data-target="#carouselExampleIndicators"
+        li data-slide-to="1" data-target="#carouselExampleIndicators"
+        li data-slide-to="2" data-target="#carouselExampleIndicators"
+      .carousel-inner
+        .carousel-item.active
+          = image_tag('slide3', class: "d-block w-100")
+          .carousel-caption.d-none.d-md-block
+            h3 Производим работы
+            p по ремонту и облицовке зданий и сооружений природным камнем
+        .carousel-item
+          = image_tag('slide4', class: "d-block w-100")
+          .carousel-caption.d-none.d-md-block
+            h3 Используем только высококачественные материаллы
+            p мрамор гранит оникс травертин, что способствует долговечности наших работ
+        .carousel-item
+          = image_tag('slide2', class: "d-block w-100")
+          .carousel-caption.d-none.d-md-block
+            h3 У нас работают гранитчики, камнетесы
+            p с большим опытом изготовления и монтажа изделий из камня
+      / a.carousel-control-prev data-slide="prev" href="#carouselExampleIndicators" role="button"
+      /   span.carousel-control-prev-icon aria-hidden="true"
+      /   span.sr-only Previous
+      / a.carousel-control-next data-slide="next" href="#carouselExampleIndicators" role="button"
+      /   span.carousel-control-next-icon aria-hidden="true"
+      /   span.sr-only Next

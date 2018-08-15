@@ -1,0 +1,30 @@
+.container
+  .row
+    .col-md-6.col-12.col-sm-6.p-2
+      = link_to root_path do
+        = image_tag ('logo_granit2.png'), alt: 'ГранитМонтаж'
+    .col-md-6.col-sm-6.p-2
+      p.float-right.text-muted
+        strong +7 (986)711-49-43
+        br
+        strong +7 (937)520-30-11
+  .row
+    .col-md-12
+      nav.navbar.navbar-expand-lg.navbar-light.bg-white.p-0
+        button.navbar-toggler aria-controls="navbarNav" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNav" data-toggle="collapse" type="button"
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse.main-nav
+          ul.navbar-nav
+            li.nav-item
+              = link_to root_path, class: "nav-link text-muted" do
+                | Главная
+                span.sr-only (current)
+            li.nav-item
+              = link_to works_path, class: "nav-link text-muted" do
+                |  Наши работы
+            li.nav-item
+              = link_to about_path, class: "nav-link text-muted" do
+                | О нас
+            li.nav-item
+              = link_to contact_path, class: "nav-link text-muted" do
+                | Контакты

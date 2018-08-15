@@ -1,0 +1,33 @@
+.container
+  hr
+  .row
+    .col-md-3.col-sm-6
+
+      = link_to root_path do
+        = image_tag ('logo_granit2.png'), alt: 'ГранитМонтаж', class: "logo-footer"
+      p.small.text-muted Изготовление и монтаж изделий из натурального камня
+    .col-md-3.col-sm-6.ml-0.pl-0.ml-auto
+      .contact-us
+        h5 Контакты
+        .small
+          i.far.fa-envelope
+          | &nbsp;
+          = mail_to "pqostevskiy@gmail.com"
+          .text-muted
+            i.fas.fa-phone-square.fa-flip-horizontal.fa-lg
+            | &nbsp;+7(986)711-49-43,
+            | &nbsp;+7(937)520-30-11
+          / .footer-social.social
+          /   ul
+          /     li
+          /       = link_to root_path do
+          /         i.fab.fa-facebook.fa-lg
+          /     li
+          /       = link_to root_path do
+          /         i.fab.fa-twitter.fa-lg
+          /     li
+          /       = link_to root_path do
+          /         i.fab.fa-linkedin.fa-lg
+          /     li
+          /       = link_to root_path do
+          /         i.fab.fa-google-plus.fa-lg
