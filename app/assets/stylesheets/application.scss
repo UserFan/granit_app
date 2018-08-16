@@ -3,8 +3,68 @@
  @import 'font-awesome';
  @import 'pages';
 
+ html,
+ button,
+ input,
+ select,
+ textarea {
+     color : #5555555;
+     }
 
- h1,
+
+
+ /*
+    * Remove text-shadow in selection highlight: h5bp.com/i
+    * These selection rule sets have to be separate.
+    * Customize the background color to match your design.
+    */
+
+ ::-moz-selection {
+     background  : #B3D4FC;
+     text-shadow : none;
+     }
+
+ ::selection {
+     background  : #B3D4FC;
+     text-shadow : none;
+ }
+
+ p, ul, ol, pre, table, blockquote {
+   margin-top: 1.5rem;
+ }
+ ul ul, ol ol, ul ol, ol ul {
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+
+
+ a,
+ a:active,
+ a:focus,
+ a:active {
+     text-decoration : none !important;
+     outline         : none
+     }
+
+ a {
+     color           : #fdc312;
+     text-decoration : none;
+     transition      : all 0.2s ease 0s;
+     }
+
+ a:hover,
+ a:focus {
+     color           : #fdc312;
+     text-decoration : underline;
+     }
+
+ ul {
+     margin     : 0;
+     padding    : 0;
+     list-style : none
+     }
+
+h1,
 h2,
 h3,
 h4,
@@ -85,29 +145,30 @@ body {
   Navigation  bar Style
  -----------------------------*/
 
-// .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-//     border-color:transparent;
-// }
-// .navbar-collapse,
-// .navbar-default {
-//     background-color: transparent;
-//     border-color: transparent;
-// }
-// .navbar{
-//     margin:0;
-//     min-height: 0;
-// }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:transparent;
+}
+.navbar-collapse,
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar{
+    margin:0;
+    min-height: 0;
+}
  .main-nav{
    padding-left: 0px;
+   padding-bottom: 0;
    border-top: 1px solid rgba(0, 0, 0, .05);
    border-radius: 0;
  }
  .main-nav li{
-     display:inline-block;
-     margin: 10px 30px 14px 0;
+     display: inline-block;
+     margin: 12px 30px 14px 0;
  }
  .main-nav .active{
-    border-top:1px solid #fdc312;
+    border-top:2px solid #fdc312;
  }
  .main-nav li a{
      font-family: 'Open Sans', sans-serif;
@@ -121,7 +182,7 @@ body {
  .main-nav li > a:hover, .main-nav li > a:focus{
      color:#6c6c6c;
      background: transparent;
-     border-top:1px solid #fdc312;
+     border-top: 1px solid #fdc312;
  }
 
  .social li{
@@ -568,4 +629,10 @@ body {
   .activity-details {
     width: 80%;
   }
+}
+
+@-moz-document url-prefix() {
+   *, body {
+      line-height: 1.4em;
+ }
 }
