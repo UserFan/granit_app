@@ -3,22 +3,6 @@
  @import 'font-awesome';
  @import 'pages';
 
- html,
- button,
- input,
- select,
- textarea {
-     color : #5555555;
-     }
-
-
-
- /*
-    * Remove text-shadow in selection highlight: h5bp.com/i
-    * These selection rule sets have to be separate.
-    * Customize the background color to match your design.
-    */
-
  ::-moz-selection {
      background  : #B3D4FC;
      text-shadow : none;
@@ -165,7 +149,7 @@ body {
  }
  .main-nav li{
      display: inline-block;
-     margin: 12px 30px 14px 0;
+     margin: 8px 30px 14px 0;
  }
  .main-nav .active{
     border-top:2px solid #fdc312;
@@ -203,95 +187,6 @@ body {
   margin:0;
 }
 
- /*---------------------------
- Breadcrumb
- -------------------------*/
- // .breadcrumb-area{
- //   overflow: hidden;
- //   background: #ffffff;
- // }
- // .breadcrumb{
- //   background: #ffffff;
- //   padding: 15px 0 0 15px;
- //   margin-bottom: 1.1em;
- // }
- // .breadcrumb a{
- //   color: #999999;
- //   font-weight: 400;
- // }
- // .breadcrumb .active{
- //   color:#000000;
- // }
- // .breadcrumb>li+li:before {
- //     padding: 0 5px;
- //     color: #999999;
- //     content: "\f101";
- //     font-family: FontAwesome;
- // }
- //
- // /*---------------------------
- // Dropdown menu style
- // -------------------------*/
- // .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
- //     background-color: transparent;
- //     border-color: none;
- // }
- // .main-nav .dropdown-menu{
- //     min-width:250px;
- //     background: #fdc312;
- //     border-radius: 0;
- //     left: -20px !important;
- //     display:block;
- //     visibility: hidden;
- //     opacity: 0;
- //     border: 0;
- //     padding: 15px 0;
- //     margin-top: 15px !important;
- //     -webkit-transition: all .3s ease 0s;
- //     -moz-transition: all .3s ease 0s;
- //     -ms-transition: all .3s ease 0s;
- //     -o-transition: all .3s ease 0s;
- //     transition: all 0.3s ease 0s;
- // }
- //
- // .main-nav .dropdown-menu li{
- //   display: block;
- // }
- // .main-nav .dropdown-menu li:first-child{
- //   padding-top:0;
- // }
- // .main-nav .dropdown-menu li a{
- //     color: #ffffff;
- //     display: inline-block;
- //     padding: 0px 30px;
- // }
- // .main-nav .dropdown-menu li a:hover{
- //   color:#6c6c6c;
- //   background: transparent;
- //   border-top: 0;
- // }
- // .main-nav .dropdown:hover .dropdown-menu{
- //   display:block;
- //   opacity: 1;
- //   visibility: visible;
- //   left:0px !important;
- // }
-
- /*------------------------------------------------
- footer-top style
------------------------------------------------*/
-// .footer-top{
-//   overflow: hidden;
-//   padding: 5em 0;
-//   border:1px solid rgba(0,0,0, .05);
-//   border-left: 0;
-//   border-right: 0;
-// }
-
-// .footer-logo img {
-//     padding-top: .5em;
-//     margin-bottom: 1em;
-// }
 
 .logo-footer {
   width:70%;
@@ -399,17 +294,6 @@ body {
   color:#ffffff;
 }
 
-// .carousel-indicators li {
-//     width: 4px;
-//     height: 4px;
-//     background: #ffffff;
-// }
-// .carousel-indicators .active {
-//     width: 6px;
-//     height: 6px;
-//     background: #FDC312;
-//     border:1px solid #FDC312;
-// }
 
 @media(min-width: 768px) and (max-width: 1199px){
   .carousel-caption{
