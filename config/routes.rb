@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get :contact, action: :contact, controller: 'pages'
   get :about, action: :about, controller: 'pages'
   get :works, action: :works, controller: 'pages'
+  get :sitemap, action: :sitemap, controller: 'pages'
 end

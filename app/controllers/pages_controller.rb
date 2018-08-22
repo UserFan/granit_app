@@ -11,4 +11,11 @@ class PagesController < ApplicationController
   def works
   end
 
+  def sitemap
+    respond_to do |format|
+      format.xml { render file: 'sitemap.xml' }
+      format.html { redirect_to root_url }
+    end
+  end
+
 end
