@@ -4,6 +4,9 @@ SitemapGenerator::Sitemap.compress = false
 
 SitemapGenerator::Sitemap.create do
   add root_path, changefreq: 'daily'
+  add contact_path, changefreq: 'weekly'
+  add about_path, changefreq: 'weekly'
+  add works_path, changefreq: 'weekly'
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
