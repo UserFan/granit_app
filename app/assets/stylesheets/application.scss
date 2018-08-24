@@ -146,6 +146,7 @@ body {
    padding-bottom: 0;
    border-top: 1px solid rgba(0, 0, 0, .05);
    border-radius: 0;
+   float: right;
  }
  .main-nav li{
      display: inline-block;
@@ -253,21 +254,22 @@ body {
 }
 .welcome-thumb{
   float:left;
-  width:36%;
-  padding-right: 50px;
+  width: auto;
+//  padding-right: 50px;
 }
 .welcome-content{
   float:left;
   width:64%;
 }
 
-@media(max-width: 767px){
+@media (min-width: 480px) and (max-width: 991px){
   .welcome-thumb{
-    width:100%;
-    padding:0 0 1em;
+    width: auto;
+    padding: 0 0 1em;
   }
   .welcome-content{
-    width:100%;
+    padding-left: 10px;
+    width: auto;
   }
 }
 
@@ -398,7 +400,8 @@ body {
   position: absolute;
   left:0;
   bottom: 0;
-  padding: 0 2.8em 2.8em;;
+  padding: 0 2.8em 2.8em;
+
 }
 .service-description h3{
     color: #ffffff;

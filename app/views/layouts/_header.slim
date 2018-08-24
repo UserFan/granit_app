@@ -1,6 +1,6 @@
 .container
   .row.align-items-center
-    .col-md-6.col-12.col-sm-6.p-2
+    .col-md-6.col-sm-6.p-2
       = link_to root_path do
         = image_tag ('logo_granit2.png'), alt: 'Гранит Монтаж (Монтаж Гранит)'
     .col-md-6.col-sm-6.p-2
@@ -11,10 +11,10 @@
   .row
     .col-md-12
       nav.navbar.navbar-expand-lg.navbar-light.bg-white.p-0
-        button.navbar-toggler aria-controls="navbarNav" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNav" data-toggle="collapse" type="button"
+        button.navbar-toggler.ml-auto aria-controls="navbarNav" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNav" data-toggle="collapse" type="button"
           span.navbar-toggler-icon
         #navbarNav.collapse.navbar-collapse.main-nav
-          ul.navbar-nav
+          ul.navbar-nav.float-right.mr-5.pr-5
             li.nav-item
               = link_to root_path, class: "nav-link text-muted" do
                 | Главная
